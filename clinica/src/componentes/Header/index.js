@@ -17,8 +17,7 @@ const Header = () => {
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/images/itunes.png" alt="Logo"  width={50} height={80}/>
-        <h1 className={styles.h1}>playlist</h1>
+        <Image className={styles.img} src="/image" alt="Logo" width={50} height={80} />
       </div>
 
       {isMenuOpen &&
@@ -29,28 +28,15 @@ const Header = () => {
             </li>
 
             <li>
-              <Link className={styles.link} href="/sobre">Sobre</Link>
+              <Link className={styles.link} href="/sobre">Médicos</Link>
             </li>
 
             <li>
-              <Link className={styles.link} href="/contatos">Contato</Link>
+              <Link className={styles.link} href="/contatos">Pacientes</Link>
             </li>
-           <li>
-            <Link className={styles.link} href="/lista">Lista</Link>
-           </li>
-
-           <li>
-            <Link className={styles.link} href="/props">Props</Link>
-           </li>
-
-           <li>
-            <Link className={styles.link} href="/filter">Filter</Link>
-           </li>
-
-           <li>
-            <Link className={styles.link} href="/efeitos">Efeitos</Link>
-           </li>
-
+            <li>
+              <Link className={styles.link} href="/lista">Agendamento</Link>
+            </li>
           </ul>
         </nav>
       }
