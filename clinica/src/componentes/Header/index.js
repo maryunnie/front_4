@@ -17,7 +17,7 @@ const Header = () => {
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/image" alt="Logo" width={50} height={80} />
+        <Image className={styles.img} src="/images/clinic.gif" alt="Logo" width={50} height={80} />
       </div>
 
       {isMenuOpen &&
