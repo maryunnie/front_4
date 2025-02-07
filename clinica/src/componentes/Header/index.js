@@ -12,7 +12,7 @@ const Header = () => {
 
     setIsMenuOpen(!isMenuOpen);
   };
-//oi vou ficar loucarrrr
+
   return (
     <header className={styles.header}>
 
