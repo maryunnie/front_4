@@ -17,25 +17,30 @@ const Header = () => {
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/images/clinic.gif" alt="Logo" width={50} height={80} />
+        <Image className={styles.img} src="/images/relatorio-de-saude.gif" alt="Logo" width={50} height={80} />
       </div>
 
       {isMenuOpen &&
         <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
           <ul className={styles.lista}>
+            
+          <li class={styles.li}><Link className={styles.link} href='/'>Home</Link>
+            <ul class={styles.ulSubmenu}>
+                        <li class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 1</a></li>
+                        <li  class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 2</a></li>
+                        <li  class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 3</a></li>
+                    </ul>
+                </li>
+
             <li>
-              <Link className={styles.link} href='/'>Home</Link>
+              <Link className={styles.link} href="/medicos">Médicos</Link>
             </li>
 
             <li>
-              <Link className={styles.link} href="/sobre">Médicos</Link>
-            </li>
-
-            <li>
-              <Link className={styles.link} href="/contatos">Pacientes</Link>
+              <Link className={styles.link} href="/pacientes">Pacientes</Link>
             </li>
             <li>
-              <Link className={styles.link} href="/lista">Agendamento</Link>
+              <Link className={styles.link} href="/agendamento">Agendamento</Link>
             </li>
           </ul>
         </nav>
@@ -48,6 +53,9 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
 
 
 /*export default function Header(){
@@ -67,4 +75,4 @@ export default Header;
     )
 }*/
 
-/*gfvrfvgyhjg5ffvb*/
+  
