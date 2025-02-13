@@ -23,24 +23,62 @@ const Header = () => {
       {isMenuOpen &&
         <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
           <ul className={styles.lista}>
-            
-          <li class={styles.li}><Link className={styles.link} href='/'>Home</Link>
-            <ul class={styles.ulSubmenu}>
-                        <li class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 1</a></li>
-                        <li  class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 2</a></li>
-                        <li  class="item-sub-menu"><a class="link-submenu" href="">Link Submenu 3</a></li>
-                    </ul>
+
+            <li>
+              <Link className={styles.link} href='/'>Home</Link>
+            </li>
+
+            <li class={styles.li}><Link className={styles.link} href="/medicos">Médicos</Link>
+              <ul class={styles.ulSubmenu}>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/medicos/listar">Listar</Link>
                 </li>
-
-            <li>
-              <Link className={styles.link} href="/medicos">Médicos</Link>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/medicos/adicionar">Adicionar</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/medicos/editar">Editar</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/medicos/excluir">Excluir</Link>
+                </li>
+              </ul>
             </li>
 
-            <li>
-              <Link className={styles.link} href="/pacientes">Pacientes</Link>
+
+            <li class={styles.li}><Link className={styles.link} href="/pacientes">Pacientes</Link>
+              <ul class={styles.ulSubmenu}>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/pacientes/listar">Listar</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/pacientes/adicionar">Adicionar</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/pacientes/editar">Editar</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/pacientes/excluir">Excluir</Link>
+                </li>
+              </ul>
             </li>
-            <li>
-              <Link className={styles.link} href="/agendamento">Agendamento</Link>
+
+
+            <li class={styles.li}><Link className={styles.link} href="/agendamento">Agendamento</Link>
+              <ul class={styles.ulSubmenu}>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/agendamento/listar consultas">Listar consultas</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/agendamento/adicionar consulta">Adicionar consulta</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/agendamento/editar agendamento">Editar agendamento</Link>
+                </li>
+                <li class={styles.lisubmenu}>
+                  <Link class={styles.linkSmenu} href="/agendamento/cancelar">Cancelar</Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -75,4 +113,4 @@ export default Header;
     )
 }*/
 
-  
+
