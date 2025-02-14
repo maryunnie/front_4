@@ -6,6 +6,10 @@
     color: #fff;
     font-family: "Josefin Sans", sans-serif;
     /*font-family: "Teko", sans-serif;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
@@ -205,11 +209,6 @@
 }
 
 
-
-.ul {
-  list-style-type: none;
-}
-
 .ulSubmenu {
   display: flex;
   height: 100px;
@@ -243,12 +242,20 @@
   color:#e8b3b3
 }
 
+.li{
+  position: relative;
+}
 
 
 .linkSmenu {
-  font-size: 20px;
-  color: #3e549b;
-  text-decoration: none;
+  position: absolute;
+    left: 0px;
+    width: max-content;
+    max-height: 0;
+    background-color: #3560af;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 1s;
 }
 
 .linkSmenu:hover {
