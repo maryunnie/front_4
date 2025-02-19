@@ -6,83 +6,84 @@ import styles from "./Header.module.css";
 import Image from "next/image"
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-
-    setIsMenuOpen(!isMenuOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState();
+    <Image className={styles.imga} src="/images/relatorio-de-saude.gif" alt='icone do menu' width={30} height={30}/>
+  const toggleMenu = () => {setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/images/relatorio-de-saude.gif" alt="Logo" width={50} height={80} />
+        <Image className={styles.img} src="/images/logo.png" alt="Logo"  width={50} height={80}/>
+        <h1 className={styles.h1}>Clínica Dom da Vida</h1>
       </div>
 
       {isMenuOpen &&
         <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
           <ul className={styles.lista}>
-
-            <li>
-              <Link className={styles.link} href='/'>Home</Link>
+            <li className={styles.link}>
+              <Link href="/" className={`${styles.Link}`}>Home</Link>
             </li>
 
-            <li class={styles.li}><Link className={styles.link} href="/medicos">Médicos</Link>
-              <ul class={styles.ulSubmenu}>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/medicos/listar">Listar</Link>
+            <li className={styles.link}>
+              <Link href="/medico">Médicos</Link>
+              <ul className={styles.ul_medico}>
+                <li className={styles.link}>
+                  <a href="/medico">Listar</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/medicos/adicionar">Adicionar</Link>
+                <li className={styles.link}>
+                  <a href="#">Adicionar</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/medicos/editar">Editar</Link>
+                <li className={styles.link}>
+                  <a href="#">Editar</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/medicos/excluir">Excluir</Link>
+                <li className={styles.link}>
+                  <a href="#">Excluir</a>
                 </li>
               </ul>
             </li>
 
+            <li className={styles.link}>
+              <Link href="/paciente">Pacientes</Link>
+              <ul className={styles.ul_medico}>
+                <li className={styles.link}>
+                  <a href="/paciente">Listar</a>
+                </li>
+                <li className={styles.link}>
+                  <a href="#">Adicionar</a>
+                </li>
+                <li className={styles.link}>
+                  <a href="#">Editar</a>
+                </li>
+                <li className={styles.link}>
+                  <a href="#">Excluir</a>
+                </li>
+              </ul>
+            </li>
 
-            <li class={styles.li}><Link className={styles.link} href="/pacientes">Pacientes</Link>
-              <ul class={styles.ulSubmenu}>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/pacientes/listar">Listar</Link>
+            <li className={styles.link}>
+              <Link href="/agendamento">Agendamento</Link>
+              <ul className={styles.ul_medico}>
+                <li className={styles.link}>
+                  <a href="/agendamento">Listar Consultas</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/pacientes/adicionar">Adicionar</Link>
+                <li className={styles.link}>
+                  <a href="#">Agendar Consultas</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/pacientes/editar">Editar</Link>
+                <li className={styles.link}>
+                  <a href="#">Editar Agendamento</a>
                 </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/pacientes/excluir">Excluir</Link>
+                <li className={styles.link}>
+                  <a href="#">Cancelar</a>
                 </li>
               </ul>
             </li>
 
-
-            <li class={styles.li}><Link className={styles.link} href="/agendamento">Agendamento</Link>
-              <ul class={styles.ulSubmenu}>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/agendamento/listar consultas">Listar consultas</Link>
-                </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/agendamento/adicionar consulta">Adicionar consulta</Link>
-                </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/agendamento/editar agendamento">Editar agendamento</Link>
-                </li>
-                <li class={styles.lisubmenu}>
-                  <Link class={styles.linkSmenu} href="/agendamento/cancelar">Cancelar</Link>
-                </li>
-              </ul>
-            </li>
           </ul>
         </nav>
       }
+
       <button className={styles.menuButton} onClick={toggleMenu}>
         {isMenuOpen ? 'Fechar' : 'Menu'}
       </button>
@@ -91,8 +92,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
 
 
