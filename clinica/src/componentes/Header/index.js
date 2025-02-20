@@ -63,10 +63,10 @@ const Header = () => {
             </li>
 
             <li className={styles.link}>
-              <Link href="/listaagendamento">Agendamento</Link>
+              <Link href="/listarAgendamento">Agendamento</Link>
               <ul className={styles.ul_medico}>
                 <li className={styles.link}>
-                  <a href="/agendamento">Listar Consultas</a>
+                  <a href="/listarAgendamento">Listar Consultas</a>
                 </li>
                 <li className={styles.link}>
                   <a href="#">Agendar Consultas</a>
