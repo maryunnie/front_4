@@ -1,0 +1,34 @@
+.table{
+    color: black;
+    border: solid 2px rgb(36, 23, 160);
+    border-radius: 5px;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tbody{
+    background-color: rgb(151, 180, 243);
+}
+
+.thead{
+    background-color: rgb(74, 96, 141);
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.td{
+   border: solid 2px rgb(36, 23, 160);
+}
+
+.divao{
+    border-radius: 8px;
+    width: 95vw;
+    max-width: 900px;
+    padding: 10px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}

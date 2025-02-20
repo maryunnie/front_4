@@ -1,7 +1,7 @@
 .buttonMedic{
-    background-color:#f1dfc4;
+  background-color: rgb(168, 207, 242);
     color:rgb(0, 0, 0);
-    border: none;
+    border:#091328;
     padding: 10px 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -11,15 +11,18 @@
   }
 .h2{
     text-align: center;
+    color: rgba(20, 23, 23, 0.649);
   }
 .tabela_medic{
     width: 100%;
-    color:#000000;
-    border-collapse: collapse;
-    background-color: #f1dfc4;
+    /*color:#000000;*/
+    /*border-collapse: collapse;*/
+    background-color: rgb(168, 207, 242);
     cursor: pointer;
-    border: solid rgb(0, 0, 0);
+    border: 1px solid rgb(32, 30, 80);
     max-width: 6 00px;
+
+
   
    
   }
@@ -29,15 +32,15 @@
     vertical-align: inherit;
     font-weight: bold;
     unicode-bidi: isolate;
-    border: 2px solid rgb(0, 0, 0);
-    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgba(24, 30, 30, 0.649);
   }
 .td{
     display: table-cell;
     vertical-align: inherit;
     unicode-bidi: isolate;
     color: #000000;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
    
   }
 .thead{
@@ -52,7 +55,7 @@
     vertical-align: inherit;
     unicode-bidi: isolate;
    
-    border: 2px solid white ;
+    /*border: 2px solid white ;*/
   
     
   }
@@ -70,9 +73,9 @@
     max-width: 900px;
   
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #e7ebfb;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 1px solid rgba(8, 10, 10, 0.649);;
   
   }
   
@@ -94,11 +97,11 @@
   }
   
 .selecione{
-    background-color: #fff;
+    background-color: rgb(25, 29, 35);
     padding: 30px;
     border-radius: 8px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 8px rgba(29, 30, 101, 0.2);
     text-align: center;
     max-height: 80vh;
     overflow-y: auto;

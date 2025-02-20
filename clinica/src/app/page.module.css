@@ -1,9 +1,18 @@
 .h1inicio{
-    color:cornflowerblue;
+    color:rgba(31, 37, 37, 0.649);
     text-align: center;
+    padding: 15px;
 
 }
 
-.page{
-    align-items: center;
+.p{
+    text-align: center; 
 }
+
+.img{
+    margin-bottom: 50px;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+    padding: 7px;
+} 

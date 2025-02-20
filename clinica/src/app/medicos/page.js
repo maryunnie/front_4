@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
-import styles from "./page.module.css";
+import styles from "./medicos.module.css";
 import Image from "next/image";
 export default function Afis() {
     let [nome, setNome] = useState(undefined)
@@ -38,7 +38,7 @@ export default function Afis() {
             <div className={styles.medicos_conteinar}>
                 <h2 className={styles.h2}> Lista de Médicos</h2>
                 <button className={styles.buttonMedic}
-                onClick={() => setMostrar(!mostrar)}
+                    onClick={() => setMostrar(!mostrar)}
                 >Buscar Médicos</button>
                 {mostrar &&
                     <div className={styles.botao} onClick={() => setMostrar(!mostrar)}>
@@ -50,9 +50,7 @@ export default function Afis() {
                                 onChange={(e) => setBusca(e.target.value)}
                                 value={busca}
                                 onClick={() => setMostrar(mostrar)}
-                                >
-                                    
-
+                            >
                             </input>
                             <ul>
                                 {nomesBusca.map((md, i) => (

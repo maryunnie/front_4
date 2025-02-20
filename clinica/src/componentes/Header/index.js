@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
-    <Image className={styles.imga} src="/images/relatorio-de-saude.gif" alt='icone do menu' width={30} height={30}/>
+    <Image className={styles.img} src="/images/relatorio-de-saude.gif" alt='icone do menu' width={30} height={30}/>
   const toggleMenu = () => {setIsMenuOpen(!isMenuOpen);
   };
 
@@ -15,8 +15,8 @@ const Header = () => {
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/images/logo.png" alt="Logo"  width={50} height={80}/>
-        <h1 className={styles.h1}>Clínica Dom da Vida</h1>
+        <Image className={styles.img} src="/images/relatorio-de-saude.gif" alt="Logo"  width={50} height={80}/>
+        <h1 className={styles.h1}>Clínica Serenity</h1>
       </div>
 
       {isMenuOpen &&
@@ -27,10 +27,10 @@ const Header = () => {
             </li>
 
             <li className={styles.link}>
-              <Link href="/medico">Médicos</Link>
+              <Link href="/medicos">Médicos</Link>
               <ul className={styles.ul_medico}>
                 <li className={styles.link}>
-                  <a href="/medico">Listar</a>
+                  <a href="/medicos">Listar</a>
                 </li>
                 <li className={styles.link}>
                   <a href="#">Adicionar</a>
@@ -45,10 +45,10 @@ const Header = () => {
             </li>
 
             <li className={styles.link}>
-              <Link href="/paciente">Pacientes</Link>
+              <Link href="/listarPacientes">Pacientes</Link>
               <ul className={styles.ul_medico}>
                 <li className={styles.link}>
-                  <a href="/paciente">Listar</a>
+                  <a href="/listarPacientes">Listar</a>
                 </li>
                 <li className={styles.link}>
                   <a href="#">Adicionar</a>
@@ -63,7 +63,7 @@ const Header = () => {
             </li>
 
             <li className={styles.link}>
-              <Link href="/agendamento">Agendamento</Link>
+              <Link href="/listaagendamento">Agendamento</Link>
               <ul className={styles.ul_medico}>
                 <li className={styles.link}>
                   <a href="/agendamento">Listar Consultas</a>

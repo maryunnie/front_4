@@ -23,8 +23,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #e7dccb;
-  box-shadow: 0 5px 10px #e7dccb;
+  background-color: rgb(154, 186, 235);
+  box-shadow: 0 5px 10px rgb(124, 150, 181);
 }
 
 .logo {
@@ -35,7 +35,7 @@
 .img {
   height: 90px;
   width: 100px;
-  border-radius: 40%;
+ /* border-radius: 40%;*/
   margin-right: 10px;
 }
 
@@ -48,7 +48,7 @@
 .nav {
   display: flex;
   gap: 20px;
-  background-color:#e7dccb ;
+  background-color: rgb(154, 186, 235);
 }
 
 .nav ul {
@@ -67,7 +67,7 @@
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
-  color: rgba(31, 37, 37, 0.649);
+  color:rgba(31, 37, 37, 0.649);
 }
 
 @media (max-width: 600px) {
@@ -83,7 +83,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #e7dccb ;
+    background-color: #cbd0e7 ;
     padding: 10px;
     max-height: 100vh;
     overflow: visible;
@@ -98,6 +98,7 @@
 
 .link {
   position: relative;
+  
 }
 
 .link:hover .ul_medico {
@@ -109,15 +110,16 @@
   flex-direction: column;
   position: absolute;
   left: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(111, 159, 232);
+  color:rgba(13, 15, 15, 0.649);
   /* min-width: 160px; */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 2);
   /* z-index: 1; */;
   margin-right: 10px;
   position: relative;
   list-style: none;
   min-width: max-content;
+  border-radius: 05%;
 }
 
 .l {
