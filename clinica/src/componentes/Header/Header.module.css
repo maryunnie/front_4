@@ -25,6 +25,9 @@
   padding: 10px 20px;
   background-color: rgb(154, 186, 235);
   box-shadow: 0 5px 10px rgb(124, 150, 181);
+ /* position: fixed; /* Fixar o header no topo */
+  /*width: 100%; /* Largura total */
+  /*height: 60px;*/
 }
 
 .logo {
@@ -35,7 +38,7 @@
 .img {
   height: 90px;
   width: 100px;
- /* border-radius: 40%;*/
+  border-radius: 40%;
   margin-right: 10px;
 }
 
@@ -54,11 +57,16 @@
 .nav ul {
   list-style: none;
   gap: 10px;
+  margin: 0;
+  padding: 0;
+  position: absolute; 
 }
 
 .nav a {
   color: var(--text-color);
   text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
 .menuButton {
@@ -116,7 +124,7 @@
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 2);
   /* z-index: 1; */;
   margin-right: 10px;
-  position: relative;
+  position: fixed;
   list-style: none;
   min-width: max-content;
   border-radius: 05%;

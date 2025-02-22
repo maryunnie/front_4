@@ -1,34 +1,112 @@
-.table{
-    color: black;
-    border: solid 2px rgb(36, 23, 160);
-    border-radius: 5px;
-    width: 50%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.tbody{
-    background-color: rgb(151, 180, 243);
-}
-
-.thead{
-    background-color: rgb(74, 96, 141);
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.td{
-   border: solid 2px rgb(36, 23, 160);
-}
-
-.divao{
-    border-radius: 8px;
-    width: 95vw;
-    max-width: 900px;
-    padding: 10px;
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
-}
+.buttonMedic{
+    background-color: rgb(168, 207, 242);
+      color:rgb(0, 0, 0);
+      border:#091328;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-left: 1%;
+    
+    }
+  .h2{
+      text-align: center;
+      color: rgba(20, 23, 23, 0.649);
+      padding: 10px;
+    }
+  .tabela_medic{
+      width: 100%;
+      /*color:#000000;*/
+      /*border-collapse: collapse;*/
+      background-color: rgb(168, 207, 242);
+      cursor: pointer;
+      border: 1px solid rgb(32, 30, 80);
+      max-width: 6 00px;
+    }
+    
+  .th{
+      display: table-cell;
+      vertical-align: inherit;
+      font-weight: bold;
+      unicode-bidi: isolate;
+      border: 1px solid rgb(0, 0, 0);
+      color: rgba(24, 30, 30, 0.649);
+    }
+  .td{
+      display: table-cell;
+      vertical-align: inherit;
+      unicode-bidi: isolate;
+      color: #000000;
+      border: 1px solid rgb(0, 0, 0);
+     
+    }
+  .thead{
+      display: table-header-group;
+      vertical-align: middle;
+      unicode-bidi: isolate;
+      border-color: rgb(255, 255, 255);
+    }
+  .tabela_medic tr{
+      display: table-row;
+    
+      vertical-align: inherit;
+      unicode-bidi: isolate;
+     
+      /*border: 2px solid white ;*/
+    
+      
+    }
+  .tbdoy{
+      display: table-row-group;
+      vertical-align: middle;
+      unicode-bidi: isolate;
+      border-color: rgb(255, 255, 255);
+      max-width: 900px;
+    
+      
+    }
+  .medicos_conteinar{
+      padding: 20px;
+      max-width: 900px;
+    
+      margin: 0 auto;
+      background-color: #e7ebfb;
+      border-radius: 8px;
+      border: 1px solid rgba(8, 10, 10, 0.649);;
+    
+    }
+    
+  .tabelaContainer {
+      width: 100%;
+      overflow-x: auto;
+    }
+  .botao{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+  .selecione{
+      background-color: rgb(214, 230, 252);
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(29, 30, 101, 0.2);
+      text-align: center;
+      max-height: 80vh;
+      overflow-y: auto;
+    
+    }
+  
+    .li{
+      list-style-type: none;
+      
+    }

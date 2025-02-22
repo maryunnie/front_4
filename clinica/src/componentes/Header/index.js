@@ -45,10 +45,10 @@ const Header = () => {
             </li>
 
             <li className={styles.link}>
-              <Link href="/listarPacientes">Pacientes</Link>
+              <Link href="/listarPaciente">Pacientes</Link>
               <ul className={styles.ul_medico}>
                 <li className={styles.link}>
-                  <a href="/listarPacientes">Listar</a>
+                  <a href="/listarPaciente">Listar</a>
                 </li>
                 <li className={styles.link}>
                   <a href="#">Adicionar</a>

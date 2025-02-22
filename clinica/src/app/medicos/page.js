@@ -54,7 +54,7 @@ export default function Afis() {
                             </input>
                             <ul>
                                 {nomesBusca.map((md, i) => (
-                                    <li key={i}>{md.nome}</li>
+                                    <li className={styles.li} key={i}>{md.nome}</li>
                                 ))}
                             </ul>
                         </div>
