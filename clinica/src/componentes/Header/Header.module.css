@@ -5,6 +5,7 @@
   list-style: none;
   position: relative;
   justify-content: flex-start;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
@@ -14,6 +15,7 @@
   position: relative;
   list-style: none;
   min-width: max-content;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
@@ -25,9 +27,10 @@
   padding: 10px 20px;
   background-color: rgb(154, 186, 235);
   box-shadow: 0 5px 10px rgb(124, 150, 181);
- /* position: fixed; /* Fixar o header no topo */
+  /*position: fixed; /* Fixar o header no topo */
   /*width: 100%; /* Largura total */
   /*height: 60px;*/
+
 }
 
 .logo {
@@ -52,14 +55,19 @@
   display: flex;
   gap: 20px;
   background-color: rgb(154, 186, 235);
+
+  /*display: flex;  
+  /*justify-content: space-between; /* Distribui espaço entre os links */  
+ /* align-items: center; */
 }
 
 .nav ul {
   list-style: none;
   gap: 10px;
-  margin: 0;
-  padding: 0;
-  position: absolute; 
+  /*margin: 0;
+  padding: 0;*/
+ /* display: flex;  */
+
 }
 
 .nav a {
@@ -87,11 +95,13 @@
   }
 
   .nav.open {
-    /* display: block; */
+    /*display: block;*/ 
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #cbd0e7 ;
+    background-color:rgb(154, 186, 235 );
+    border-radius: 20px;
+    margin-top: 15px;
     padding: 10px;
     max-height: 100vh;
     overflow: visible;
@@ -110,7 +120,7 @@
 }
 
 .link:hover .ul_medico {
-  display: flex;
+ display: flex;
 }
 
 .ul_medico {
@@ -124,7 +134,7 @@
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 2);
   /* z-index: 1; */;
   margin-right: 10px;
-  position: fixed;
+  position: relative;
   list-style: none;
   min-width: max-content;
   border-radius: 05%;
